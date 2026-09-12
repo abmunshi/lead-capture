@@ -18,9 +18,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 
-
-
-
 // Lead capture API
 app.post("/api/lead", async (req, res) => {
     console.log("Received lead data:", req.body);
