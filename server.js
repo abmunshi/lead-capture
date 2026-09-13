@@ -14,10 +14,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-// Serve frontend files
-app.use(express.static("public"));
-
-
 // Lead capture API
 app.post("/api/lead", async (req, res) => {
     console.log("Received lead data:", req.body);
